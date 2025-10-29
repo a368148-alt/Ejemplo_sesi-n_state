@@ -4,7 +4,7 @@ st.title("Ejemplo para usar session_ state")
 if "count" not in st.session_state :
   st.session_state["count"] = 0
 
-if st.buttom ("Click me")
+if st.buttom ("Click me"):
  st.session_state ("Count") += 1
 
 
