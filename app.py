@@ -1,9 +1,9 @@
 import streamlit as st
-st.title("Ejemplo para usar sesión_ state")
+st.title("Ejemplo para usar sesion_ state")
 
-if "count" not in st.sesión_state :
-  st.sesión_state["count"] = 0
+if "count" not in st.sesion_state :
+  st.sesion_state["count"] = 0
 
-st.write(st.sesión_state)
+st.write(st.sesion_state)
 
 
