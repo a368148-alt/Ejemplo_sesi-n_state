@@ -11,10 +11,12 @@ if "name" not in st.session_state:
 if st.button("Click me"):
   st.session_state["count"] += 1
 
-# Guardamos el valor del text_input directamente en session_state usando la clave "name"
-st.text_input("Escribe tu nombre", key="name")
 
-# Mostramos el nombre entre comillas
-st.write(f'"{st.session_state["name"]}"')
+nombre= st.text_input("Escribe tu nombre")
+st.write(nombre)
+
+if nombre:
+  st.session_state["name"] = nombre
 
 st.write(st.session_state)
+
